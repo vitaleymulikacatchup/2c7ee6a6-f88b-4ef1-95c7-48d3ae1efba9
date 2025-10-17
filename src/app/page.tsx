@@ -8,7 +8,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Sun, Architecture } from "lucide-react";
+import { Sun } from "lucide-react";
 
 const assetMap = [
   {"id":"hero-sicily-image","url":"https://images.pexels.com/photos/34327487/pexels-photo-34327487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","alt":"Stunning aerial view of Mount Etna's craters and landscape in Sicily, captured under a clear blue sky."},
@@ -67,7 +67,7 @@ export default function Page() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: "Beautiful Architecture", description: "Marvel at the stunning architecture.", icon: Architecture, button: { text: "Explore", href: "#" } },
+              { title: "Beautiful Architecture", description: "Marvel at the stunning architecture.", icon: Sun, button: { text: "Explore", href: "#" } },
               { title: "Picturesque Beaches", description: "Relax on golden sands of Sicily.", icon: Sun, button: { text: "Visit", href: "#" } }
             ]}
           />
