@@ -76,26 +76,25 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Sicily Vibes - Discover the Beauty",
-  description: "Explore the beauty of Sicily through our captivating website.",
+  title: "Sicily: Discover the Jewel of the Mediterranean",
+  description: "Explore the rich culture and stunning landscapes of Sicily.",
+  keywords: "Sicily, travel, culture",
   openGraph: {
-    title: "Sicily Vibes - Discover the Beauty",
-    description: "Explore the beauty of Sicily through our captivating website.",
-    siteName: "Sicily Vibes",
-    images: [
-      {
-        url: "https://images.pexels.com/photos/31574487/pexels-photo-31574487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-        alt: "Beautiful Sicilian Landscape"
-      }
-    ]
+    title: "Discover Sicily",
+    description: "Experience the vibrant culture and breathtaking landscapes of Sicily.",
+    siteName: "Sicily",
+    images: [{ url: "https://images.pexels.com/photos/34327487/pexels-photo-34327487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" }],
+    type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sicily Vibes - Discover the Beauty",
-    description: "Explore the beauty of Sicily through our captivating website.",
-    images: [
-      "https://images.pexels.com/photos/31574487/pexels-photo-31574487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-    ]
+    title: "Discover Sicily",
+    description: "Experience the vibrant culture and breathtaking landscapes of Sicily.",
+    images: ["https://images.pexels.com/photos/34327487/pexels-photo-34327487.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"]
+  },
+  robots: {
+    index: true,
+    follow: true
   }
 };
 
@@ -106,13 +105,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <PostHogWrapper>
-      <body
+      <PostHogWrapper>
+        <body
           className={`${interTight.variable} ${playfairDisplay.variable} ${roboto.variable} ${openSans.variable} ${lato.variable} ${montserrat.variable} ${poppins.variable} ${raleway.variable} ${ubuntu.variable} ${nunito.variable} antialiased`}
-      >
-      <AuroraBackground />
-      {children}
-      
+        >
+          <AuroraBackground />
+          {children}
+        
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -951,7 +950,7 @@ export default function RootLayout({
           }}
         />
       </body>
-    </PostHogWrapper>
+      </PostHogWrapper>
     </html>
   );
 }
