@@ -1,4 +1,4 @@
-use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -26,16 +26,14 @@ export default function Page() {
       borderRadius="sharp"
     >
       <div id="nav" data-section="nav" className="scroll-mt-24">
-        <div className="mx-auto px-4 md:px-6">
-          <NavbarStyleApple
-            navItems={[
-              { name: "Home", id: "home" },
-              { name: "About", id: "about" },
-              { name: "Contact", id: "contact" }
-            ]}
-            brandName="Sicily"
-          />
-        </div>
+        <NavbarStyleApple
+          navItems={[
+            { name: "Home", id: "home" },
+            { name: "About", id: "about" },
+            { name: "Contact", id: "contact" }
+          ]}
+          brandName="Sicily"
+        />
       </div>
 
       <div id="hero" data-section="hero" className="scroll-mt-24">
@@ -69,8 +67,8 @@ export default function Page() {
         <div className="mx-auto px-4 md:px-6">
           <FeatureCardTwo
             features={[
-              { title: "Beautiful Architecture", description: "Marvel at the stunning architecture.", icon: Architecture, button: { text: "Explore", href: "#" }},
-              { title: "Picturesque Beaches", description: "Relax on golden sands of Sicily.", icon: Sun, button: { text: "Visit", href: "#" }}
+              { title: "Beautiful Architecture", description: "Marvel at the stunning architecture.", icon: Architecture, button: { text: "Explore", href: "#" } },
+              { title: "Picturesque Beaches", description: "Relax on golden sands of Sicily.", icon: Sun, button: { text: "Visit", href: "#" } }
             ]}
             imageSrc={assetMap.find(a => a.id === "feature-sicily-architecture")?.url ?? "/public/images/placeholder.webp"}
           />
